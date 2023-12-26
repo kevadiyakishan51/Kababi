@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            position: relative;
+        }
+        .b{
+            position: absolute;
+        }
+        .c{
+            position: absolute;
+            display: none;
+
+        }
+        .a:hover .b{
+            display: none;
+        }
+        .a:hover .c{
+            display: block;
+            transition: all 0.3s ease;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px;
+        }
+
+
+
+
+
+
+
+.menu-bar
+{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li
+{
+    padding: 12px 14px;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+.menu-bar ul li a:hover
+{
+    color: #e9446e;
+    border-radius: 3px;
+}
+.sub-menu-1
+{
+    display: none;
+    font-size: 12px;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 12px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 220px;
+    padding: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #e9446e;
+    border-bottom: 1px dotted #e9446e;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-2
+{
+    display: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,20%);
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 190px;
+    background: #fff;
+}
+/* demo drop */
+.aa1
+{
+    width: 1519.200px;
+    height: 50px;
+    float: left;
+    
+}
+.aa2
+{
+    width: 1200px;
+    height: 50px;
+    float: left;
+    margin-left: 159.500px;
+    margin-right: 159.500px;
+}
+.aa3
+{
+    width: 1200px;
+    height: 50px;
+    float: left;
+    color: #2d2d2d;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: #e9446e;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 170px;
+    background-color: #f9f9f9;
+    width: 16%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content .header {
+    padding: 0px;
+    color: #000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .column {
+    float: left;
+    width: 225px;
+    padding: 10px;
+    background-color: #fff;
+    height: 355px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .column a:hover {
+    background-color: #fafafa;
+    text-decoration: underline;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .angle-right
+  {
+    margin-left: 50px;
+  }
+  .dropdown2 {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown2 .dropbtn2 {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+  }
+  
+  .navbar a:hover, .dropdown2:hover .dropbtn2 {
+    background-color: #fff;
+    color: #e9446e;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    margin-left: 150px;
+    background-color: #f9f9f9;
+    width: 80.5%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content2 .header2 {
+    padding: 0px;
+    color: #000;
+  }
+  
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+  }
+  .column2 {
+    float: left;
+    width: 224px;
+    padding: 10px;
+    background-color: #fff;
+    height: 310px;
+  }
+  
+  .column2 a {
+    float: none;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .column2 a:hover {
+    text-decoration:  1px underline dotted;
+    color: #e9446e;
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .dropdown3 {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown3 .dropbtn3 {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+  }
+  
+  .navbar a:hover, .dropdown3:hover .dropbtn3 {
+    background-color: #fff;
+    color: #e9446e;
+  }
+  
+  .dropdown-content3 {
+    display: none;
+    position: absolute;
+    margin-left: 150px;
+    background-color: #f9f9f9;
+    width: 80.5%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content3 .header3 {
+    padding: 0px;
+    color: #000;
+  }
+  
+  .dropdown3:hover .dropdown-content3 {
+    display: block;
+  }
+    </style>
+</head>
+<body>
+
+
+    <div class="menu-bar">
+        <ul style="padding: 0%; margin: 0%; margin-left: 129.500px;">
+            <li><a href="">#TREND NOW &nbsp;<i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub-menu-1">
+                    <ul style="padding: 0%; margin: 0%;">
+                        <li><a href="">&nbsp; Maecenas commodos</a></li>
+                        <li><a href="">&nbsp; Malesuada sarcus</a></li>
+                        <li class="hover-me"><a href="">&nbsp; Fermentum loremous</a><i class="fa-solid fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul style="padding: 0%; width: 220px;">
+                                    <li><a href="">&nbsp; Fermentum loremous</a></li>
+                                    <li><a href="">&nbsp; Maecenas commodos</a></li>
+                                    <li><a href="">&nbsp; Malesuada sarcus</a></li>
+                                    <li><a href="">&nbsp; Habitasse molateas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">&nbsp; Habitasse molateas</a></li>
+                        <li><a href="">&nbsp; Maecenas commodosa</a></li>
+                        <li><a href="">&nbsp; Maecenas commodoso</a></li>
+                        <li><a href="">&nbsp; Fermentum loremousa</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">MAKEUP</a></li>
+            <li><a href="">NAIL</a></li>
+            <!-- <li><a href="">BEAUTY ACCESSORIES &nbsp;<i class="fa-solid fa-angle-down"></i></a></li> -->
+            <div class="dropdown2">
+                <button class="dropbtn2">BEAUTY ACCESSORIES
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="dropdown-content2">
+                  <div class="header2">    </div>   
+                  <div class="row2">
+                    <div class="column2">
+                      <h3 class="dd2">&nbsp;&nbsp; Lorem De Dorus</h3>
+                      <a href="#">Cosmopolis</a>
+                      <a href="#">Destibulum Mauris</a>
+                      <a href="#">Fermentum Loremous</a>
+                      <a href="#">Habitasse Molateas</a>
+                      <a href="#">Maecenas Commodos</a>
+                      <a href="#">Malesuada Sarcus</a>
+                      <a href="#">Milancelos</a>
+                    </div>
+    
+                    <div class="column2">
+                      <h3>Milancelos A Lanos</h3>   
+                      <a href="#">Cosmopolis</a>
+                      <a href="#">Fermentum Loremous</a>
+                      <a href="#">Maecenas Commodos</a>
+                      <a href="#">Malesuada Sarcus</a>
+                      <a href="#">Malesuada Sarcuso</a>
+                      <a href="#">Milancelos</a>
+                    </div>
+    
+                    <div class="column2">
+                      <h3>&nbsp;&nbsp; Lynn Cosmopolis</h3>
+                      <a href="#">Cosmopolis</a>
+                      <a href="#">Destibulum Mauris</a>
+                      <a href="#">Fermentum Loremous</a>
+                      <a href="#">Habitasse Molateas</a>
+                      <a href="#">Maecenas Commodos</a>
+                      <a href="#">Malesuada Sarcus</a>
+                      <a href="#">Milancelos</a>
+                    </div>
+    
+                    <div class="column2">
+                      <h3>&nbsp;&nbsp; Nor Loremirus</h3>
+                      <a href="#">Cosmopolis</a>
+                      <a href="#">Fermentum Loremous</a>
+                      <a href="#">Habitasse Molateas</a>
+                      <a href="#">Maecenas Commodos</a>
+                      <a href="#">Malesuada Sarcus</a>
+                      <a href="#">Milancelos</a>
+                    </div>
+    
+                    <div class="column2">
+                      <h3>&nbsp;&nbsp; Accéssorius</h3>
+                      <a href="#">Fermentum Loremous</a>
+                      <a href="#">Habitasse Molateas</a>
+                      <a href="#">Maecenas Commodos</a>
+                      <a href="#">Malesuada Sarcus</a>
+                    </div>
+    
+                  </div>
+                  <div class="dd3">
+                      <div class="dd4">Free International Shipping. No Minimum Purchase Required*</div>
+                  </div>
+    
+                </div>
+              </div>
+    
+            <!-- <li><a href="">BODY ART &nbsp;<i class="fa-solid fa-angle-down"></i></a></li> -->
+            <div class="dropdown3">
+                <button class="dropbtn3">BODY ART
+                  <i class="fa-solid fa-angle-down"></i>
+                </button>&nbsp;
+                <div class="dropdown-content3">
+                  <div class="header3">    </div>   
+                  <div class="row3">
+    
+                    <div class="column3-1">
+                      <a href="#"><img src="css/img/48.jpg"></a> 
+                    </div>
+    
+                    <div class="column3-2">
+                        <div class="column3">
+                            <a href="#">Lorem De Dorus</a>
+                            <a href="#">Fermentum Loremous</a>
+                            <a href="#">Habitasse Molateas</a>
+                            <a href="#">Maecenas Commodos</a>
+                            <a href="#">Malesuada Sarcus</a>
+                        </div>
+    
+                        <div class="column3">
+                            <a href="#">Milancelos A Lanos</a>
+                            <a href="#">Fermentum Loremous</a>
+                            <a href="#">Maecenas Commodos</a>
+                            <a href="#">Malesuada Sarcus</a>
+                        </div>
+    
+                        <div class="column3">
+                            <a href="#">Lynn Cosmopolis</a>
+                            <a href="#">Fermentum Loremous</a>
+                            <a href="#">Habitasse Molateas</a>
+                            <a href="#">Maecenas Commodos</a>
+                            <a href="#">Malesuada Sarcus</a>
+                        </div>
+    
+                        <div class="column3">
+                            <a href="#">Comos De Milano</a>
+                            <a href="#">Fermentum Loremous</a>
+                            <a href="#">Habitasse Molateas</a>
+                            <a href="#">Maecenas Commodos</a>
+                            <a href="#">Malesuada Sarcus</a>
+                        </div>
+    
+                        <div class="column3">
+                            <a href="#">Nor Loremirus</a>
+                            <a href="#">Fermentum Loremous</a>
+                            <a href="#">Maecenas Commodos</a>
+                            <a href="#">Malesuada Sarcus</a>
+                        </div>
+    
+                        <div class="column3">
+                            <a href="#">Accéssorius</a>
+                            <a href="#">Habitasse Molateas</a>
+                            <a href="#">Fermentum Loremous</a>
+                            <a href="#">Maecenas Commodos</a>
+                            <a href="#">Malesuada Sarcus</a>
+                        </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+    
+            <li><a href="">MAKEUP TOOLS</a></li>
+            <li><a href="">FRAGRANCE</a></li>
+            <li><a href="">LOOKBOOK</a></li>
+            <li><a href="">BRANDS</a></li>
+        </ul>
+    </div>
+</body>
+</html>
